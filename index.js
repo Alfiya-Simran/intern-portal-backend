@@ -25,6 +25,9 @@ const leaderboard = [
 // Routes
 app.get("/intern", (req, res) => res.json(intern));
 app.get("/leaderboard", (req, res) => res.json(leaderboard));
+app.get("/", (req, res) => {
+  res.send("Intern Portal Backend API is running!");
+});
 
 // Start server
 app.listen(PORT, () => {
